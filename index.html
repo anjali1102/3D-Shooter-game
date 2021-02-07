@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Shoot em Up</title>
+		<style>
+			body 
+      { 
+      margin: 0; 
+      }
+			canvas 
+      { 
+      width: 100%; 
+      height: 100% 
+      }
+			html 
+      { 
+      overflow-y: hidden;   
+      }
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+</head>
+	<body>
+		<div id="intro-screen">
+			<h1>Shoot<i class="b">Them</i>Up</h1>
+			<p>Kill all your enemies !</p>
+			<h2>Controls:</h2>
+			<ul>
+				<li><i class="fa fa-arrow-up" style="font-size:24px"></i> - forward</li>
+				<li><i class="fa fa-arrow-down" style="font-size:24px"></i> - backward</li>
+				<li><i class="fa fa-arrow-right" style="font-size:24px"></i> - turn right</li>
+				<li><i class="fa fa-arrow-left" style="font-size:24px"></i> - turn left</li>
+				<li><i>[space]</i> - fire/shoot</li>
+				<button id="start-game">Start!</button>
+			</ul>
+		</div>
+		<div id="outro-screen">
+		</div>
+		<div id="grey-out">
+			<div class="hud"><div class="sub-box"><label>Score </label> <div id="score">0</div></div><div class="sub-box"><label>Health:</label> <div id="health">100</div></div></div>
+			<script src="js/three.js"></script>
+			<script src="js/main.js">
+
+			</script>
+		</div>
+	</body>
+</html>
